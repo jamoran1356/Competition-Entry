@@ -1,0 +1,34 @@
+{
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"sandboxnet": "access.sandboxnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"contracts": {
+		"myNBAtsBM": "./contracts/mynbats.cdc"
+	},
+	"accounts": {
+		"testnet-account":{
+			"address": "0x6c0860268db732a7",
+			"key": {
+				"type": "hex",
+				"index": 0,
+				"signatureAlgorithm": "ECDSA_secp256k1",
+				"hashAlgorithm": "SHA3_256",
+				"privateKey": "97fd9e11543b03d9a07c0330fb8a6b41728089f7912703a6d4df708d9042af83"
+				}
+		},
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": "17d26192a2621e7777681b41337936700cebf45a0d5b5afa7948b0118926f0b3"
+		}
+	},
+	"deployments": {
+		"testnet": {
+			"testnet-account": [
+				"myNBAtsBM"
+			]
+		}
+	}
+}
